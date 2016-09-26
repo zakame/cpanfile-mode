@@ -52,7 +52,11 @@
   '(("Required Packages"
      "^\\s-*\\(requires +\\)\\(\\s\"\\_<.+\\_>\\s\"\\)" 2)
     ("Recommended Packages"
-     "^\\s-*\\(recommends +\\)\\(\\s\"\\_<.+\\_>\\s\"\\)" 2))
+     "^\\s-*\\(recommends +\\)\\(\\s\"\\_<.+\\_>\\s\"\\)" 2)
+    ("Suggested Packages"
+     "^\\s-*\\(suggests +\\)\\(\\s\"\\_<.+\\_>\\s\"\\)" 2)
+    ("Conflicting Packages"
+     "^\\s-*\\(conflicts +\\)\\(\\s\"\\_<.+\\_>\\s\"\\)" 2))
   "List of `imenu' matchers for `cpanfile-mode'.")
 
 ;;;###autoload
