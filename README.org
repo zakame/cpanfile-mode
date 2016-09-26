@@ -1,0 +1,24 @@
+#+TITLE: cpanfile-mode --- Edit CPANfiles in Emacs
+
+* About
+
+  This is a simple mode for editing [[https://metacpan.org/pod/cpanfile][cpanfile]] for Perl 5 modules.  It
+  provides syntax highlighting for module requirements as described in
+  [[https://metacpan.org/pod/CPAN::Meta::Spec][CPAN::Meta::Spec]], and [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Imenu.html][imenu]] integration.
+
+  This mode derives from =perl-mode= (or =cperl-mode=, if you aliased it.)
+
+* Usage
+
+  If you're on [[https://github.com/jwiegley/use-package][use-package]] with [[https://github.com/quelpa/quelpa][quelpa]], add this in your =init.el=:
+
+  #+BEGIN_SRC emacs-lisp
+  (use-package cpanfile-mode
+    :quelpa (cpanfile-mode :fetcher github :repo "zakame/cpanfile-mode"))
+  #+END_SRC
+
+  Then visit your project's =cpanfile=.
+
+  To quickly find a required package, call =M-x imenu= or similar.
+
+  Soon to find its way on MELPA!
