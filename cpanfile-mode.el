@@ -33,7 +33,7 @@
 ;;; Code:
 
 (defvar cpanfile-phases
-  '("configure" "build" "test" "develop")
+  '("configure" "build" "test" "runtime" "develop")
   "Phases for highlighting in `cpanfile-mode'.")
 
 (defvar cpanfile-keywords
