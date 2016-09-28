@@ -44,8 +44,8 @@
 (defvar cpanfile-font-lock-defaults
   `((("\\s\".+?\\s\"" . font-lock-string-face)
      (",\\|;\\|{\\|}\\|=>" . font-lock-keyword-face)
-     ( ,(regexp-opt cpanfile-keywords 'words) . font-lock-keyword-face)
-     ( ,(regexp-opt cpanfile-phases 'words) . font-lock-constant-face)))
+     ( ,(regexp-opt cpanfile-keywords 'symbols) . font-lock-keyword-face)
+     ( ,(regexp-opt cpanfile-phases 'symbols) . font-lock-constant-face)))
   "Keyword highlighting specification for `cpanfile-mode'.")
 
 (defvar cpanfile-imenu-generic-expression
