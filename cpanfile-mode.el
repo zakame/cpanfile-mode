@@ -3,11 +3,12 @@
 
 ;;; Package description
 
-;; URL          :       https://github.com/zakame/cpanfile-mode
-;; Author       :       Zak B. Elep <zakame@zakame.net>
-;; Version      :       0.0.1
-;; Date Created :       Mon Sep 26 07:10:33 UTC 2016
-;; Keywords     :       perl
+;; URL              : https://github.com/zakame/cpanfile-mode
+;; Author           : Zak B. Elep <zakame@zakame.net>
+;; Version          : 0.0.1
+;; Date Created     : Mon Sep 26 07:10:33 UTC 2016
+;; Keywords         : perl
+;; Package-Requires : ((emacs "24.4"))
 
 ;; This file is NOT part of GNU Emacs.
 
