@@ -42,7 +42,7 @@
   "Keywords for highlighting in `cpanfile-mode'.")
 
 (defvar cpanfile-font-lock-defaults
-  `((("\\s\".*\\s\"" . font-lock-string-face)
+  `((("\\s\".+?\\s\"" . font-lock-string-face)
      (",\\|;\\|{\\|}\\|=>" . font-lock-keyword-face)
      ( ,(regexp-opt cpanfile-keywords 'words) . font-lock-keyword-face)
      ( ,(regexp-opt cpanfile-phases 'words) . font-lock-constant-face)))
