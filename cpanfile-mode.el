@@ -1,7 +1,6 @@
-;;; cpanfile-mode.el --- Edit cpanfiles in Emacs
-;; Copyright (C) 2016 Zak B. Elep
+;;; cpanfile-mode.el --- Major mode for cpanfiles
 
-;;; Package description
+;; Copyright (C) 2016 Zak B. Elep
 
 ;; URL              : https://github.com/zakame/cpanfile-mode
 ;; Author           : Zak B. Elep <zakame@zakame.net>
@@ -27,7 +26,7 @@
 
 ;;; Commentary:
 
-;; This is a simple helper for editing Perl cpanfile on Emacs, derived
+;; This is a major mode for editing Perl cpanfiles, derived
 ;; from `perl-mode' (or `cperl-mode', if aliased to it.)  Features
 ;; simple highlighting of cpanfile keywords, and `imenu' lookup.
 
@@ -63,13 +62,13 @@
 ;;;###autoload
 (define-derived-mode cpanfile-mode perl-mode "CPANfile"
   "Major mode for editing Perl CPANfiles."
-
-  (setq-local font-lock-defaults cpanfile-font-lock-defaults)
+  (setq font-lock-defaults cpanfile-font-lock-defaults)
   (setq-local imenu-generic-expression
               cpanfile-imenu-generic-expression)
   (setq-local imenu-create-index-function
               'imenu-default-create-index-function))
 
+;;;###autoload
 (add-to-list 'auto-mode-alist
              '("cpanfile\\'" . cpanfile-mode))
 
