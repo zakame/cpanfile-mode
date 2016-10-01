@@ -1,5 +1,7 @@
 #+TITLE: cpanfile-mode --- Edit CPANfiles in Emacs
 
+[[https://travis-ci.org/zakame/cpanfile-mode][file:https:/travis-ci.org/zakame/cpanfile-mode.svg?branch=master]]
+
 * About
 
   This is a simple mode for editing [[https://metacpan.org/pod/cpanfile][cpanfile]] for Perl 5 modules.  It
