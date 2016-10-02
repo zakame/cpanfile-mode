@@ -1,5 +1,6 @@
 #+TITLE: cpanfile-mode --- Edit CPANfiles in Emacs
 
+[[https://melpa.org/#/cpanfile-mode][file:https://melpa.org/packages/cpanfile-mode-badge.svg]]
 [[https://travis-ci.org/zakame/cpanfile-mode][file:https://travis-ci.org/zakame/cpanfile-mode.svg?branch=master]]
 
 * About
@@ -12,15 +13,13 @@
 
 * Usage
 
-  If you're on [[https://github.com/jwiegley/use-package][use-package]] with [[https://github.com/quelpa/quelpa][quelpa]], add this in your =init.el=:
+  If you're on [[https://github.com/jwiegley/use-package][use-package]], add this in your =init.el=:
 
   #+BEGIN_SRC emacs-lisp
   (use-package cpanfile-mode
-    :quelpa (cpanfile-mode :fetcher github :repo "zakame/cpanfile-mode"))
+    :ensure t)
   #+END_SRC
 
   Then visit your project's =cpanfile=.
 
   To quickly find a required package, call =M-x imenu= or similar.
-
-  Soon to find its way on MELPA!
