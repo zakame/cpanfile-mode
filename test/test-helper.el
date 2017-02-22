@@ -11,6 +11,4 @@
        (load-prefer-newer t))
   (load (expand-file-name "cpanfile-mode" source-directory)))
 
-(provide 'test-helper)
-
 ;;; test-helper.el ends here
